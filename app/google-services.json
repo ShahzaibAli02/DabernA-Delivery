@@ -1,34 +1,42 @@
 {
   "project_info": {
-    "project_number": "956962510077",
-    "firebase_url": "https://front-9-aa271.firebaseio.com",
-    "project_id": "front-9-aa271",
-    "storage_bucket": "front-9-aa271.appspot.com"
+    "project_number": "728433066351",
+    "firebase_url": "https://daberna-5526c.firebaseio.com",
+    "project_id": "daberna-5526c",
+    "storage_bucket": "daberna-5526c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:956962510077:android:ad577a6aa578330b",
+        "mobilesdk_app_id": "1:728433066351:android:147b681029ca61784e689a",
         "android_client_info": {
-          "package_name": "com.app.p2439GB"
+          "package_name": "com.daber.daberna"
         }
       },
       "oauth_client": [
         {
-          "client_id": "956962510077-h2po272oi1d8csa6s0kk2d8ltcgrob9h.apps.googleusercontent.com",
+          "client_id": "728433066351-t3ho2aa3gu2nsb9qd3toria32m2l5cs4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.daber.daberna",
+            "certificate_hash": "338347f87f42e0bd9ddf26ffdb2e89e980d0eb6d"
+          }
+        },
+        {
+          "client_id": "728433066351-8mpjk61krf63eiud4dahgtp6e0tqh482.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBZSBGtqJNoHCB9HJYfDM8dEk36gN0mNlo"
+          "current_key": "AIzaSyDVu2jh-ohFvOPzKc0bfx-1Eqzl_m7Go-Q"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "956962510077-h2po272oi1d8csa6s0kk2d8ltcgrob9h.apps.googleusercontent.com",
+              "client_id": "728433066351-8mpjk61krf63eiud4dahgtp6e0tqh482.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

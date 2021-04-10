@@ -12,17 +12,22 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.daber.daberna.Activities.Driver.SearchPassenger;
 import com.daber.daberna.Activities.EasyLocationProvider;
 import com.daber.daberna.Activities.Login.Login;
+import com.daber.daberna.Activities.MapsActivity;
 import com.daber.daberna.Constants;
 import com.daber.daberna.Dialogs;
 import com.daber.daberna.Model.PassengerRequest;
@@ -34,6 +39,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.text.DecimalFormat;
+
+import javax.xml.validation.Validator;
 
 public class Destination_Selector extends AppCompatActivity implements View.OnClickListener
 {
@@ -145,7 +152,7 @@ public class Destination_Selector extends AppCompatActivity implements View.OnCl
         if(v==editTextEndingPoint)
         {
             finish();
-          //  startActivity(new Intent(Destination_Selector.this, MapsActivity.class).putExtra("Dest","end"));
+            startActivity(new Intent(Destination_Selector.this, MapsActivity.class).putExtra("Dest","end"));
 
         }
         if(v==chkbxRequestCargo)

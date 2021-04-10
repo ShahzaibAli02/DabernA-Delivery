@@ -39,6 +39,26 @@ public class EasyLocationProvider implements LifecycleObserver {
 
 
 
+    /*
+
+
+
+
+    This Class Is Used To Get Current Location Of Passenger
+    Dont Waste Time Understanding this Because I also Dont how it working
+    i get this code from android documentation
+
+
+
+     */
+
+
+
+
+
+
+
+
     private EasyLocationCallback callback;
     private Context context;
     private FusedLocationProviderClient mFusedLocationClient;
@@ -52,8 +72,7 @@ public class EasyLocationProvider implements LifecycleObserver {
     private int priority;
     private double Latitude = 0.0, Longitude = 0.0;
 
-    private EasyLocationProvider(final Builder builder)
-    {
+    private EasyLocationProvider(final Builder builder) {
         context = builder.context;
         callback = builder.callback;
         interval = builder.interval;
@@ -62,8 +81,7 @@ public class EasyLocationProvider implements LifecycleObserver {
     }
 
     @SuppressLint("MissingPermission")
-    public void requestLocationUpdate()
-    {
+    public void requestLocationUpdate() {
         mFusedLocationClient.requestLocationUpdates(mLocationRequest, mLocationCallback, Looper.myLooper());
     }
 

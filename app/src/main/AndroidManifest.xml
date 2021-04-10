@@ -27,6 +27,7 @@
         <activity android:name=".Activities.Passenger.Destination_Selector" />
         <activity android:name=".Activities.Login.PassengerRegistation" />
         <activity android:name=".Activities.Login.DriverRegistration" />
+        <activity android:name=".Activities.MapsActivity" />
         <activity android:name=".Activities.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

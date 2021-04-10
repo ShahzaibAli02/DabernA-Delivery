@@ -9,6 +9,8 @@ import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.location.Address;
+import android.location.Geocoder;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -19,10 +21,16 @@ import android.widget.Toast;
 
 import com.daber.daberna.Activities.EasyLocationProvider;
 import com.daber.daberna.Activities.Login.Login;
+import com.daber.daberna.Activities.MapsActivity;
+import com.daber.daberna.Activities.Passenger.Destination_Selector;
 import com.daber.daberna.Constants;
 import com.daber.daberna.Dialogs;
 import com.daber.daberna.R;
 import com.google.android.gms.common.api.GoogleApiClient;
+
+import java.io.IOException;
+import java.util.List;
+import java.util.Locale;
 
 public class SearchPassenger extends AppCompatActivity implements View.OnClickListener {
 
@@ -203,7 +211,7 @@ public class SearchPassenger extends AppCompatActivity implements View.OnClickLi
         if(v==txtwhereToGo)  //If Where To Go Button Is Pressed Open Maps Activity And PutExtrs WhereTOGo So that MapsActivity can know from where we call it
         {
             finish();
-          //  startActivity(new Intent(SearchPassenger.this, MapsActivity.class).putExtra("Dest","WhereTOGo"));
+            startActivity(new Intent(SearchPassenger.this, MapsActivity.class).putExtra("Dest","WhereTOGo"));
 
         }
         if(v==btnSearchPassenger)
