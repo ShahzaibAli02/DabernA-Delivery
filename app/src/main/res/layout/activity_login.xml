@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/loginback"
+    tools:context=".Activities.Login.Login">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/logo"
+        android:textSize="30sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/blackk"
+
+        />
+
+    <EditText
+        android:id="@+id/edttxtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:paddingStart="10dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/tenter_email"
+        android:drawableStart="@drawable/email"
+
+        />
+    <EditText
+        android:id="@+id/edttxtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edittext"
+        android:paddingStart="10dp"
+        android:hint="@string/tenter_password"
+        android:drawableStart="@drawable/user"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        />
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        >
+        <Button
+            android:id="@+id/btnPassReg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Passenger Registration"
+            android:textColor="@color/white"
+            android:backgroundTint="#8BC34A"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+
+            />
+        <Button
+            android:id="@+id/btnDriverReg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Driver Registration"
+            android:textColor="@color/white"
+            android:backgroundTint="#F44336"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".Activities.Passenger.DriverOnWay">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/logo"
+        android:textSize="30sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="@color/blackk"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Driver On Way"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:textColor="#FF9800"
+        android:layout_marginTop="20dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/txtDriverName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Driver Name  : NAN"
+        android:textSize="20sp"
+        android:fontFamily="serif"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/blackk"
+        android:layout_marginTop="20dp"
+
+        />
+    <TextView
+        android:id="@+id/txtCarModule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Car Module  : NAN"
+        android:textSize="20sp"
+        android:fontFamily="serif"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/blackk"
+        android:layout_marginTop="20dp"
+
+        />
+    <TextView
+        android:id="@+id/txtCarPlateNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Car Plate No  : NAN"
+        android:textSize="20sp"
+        android:fontFamily="serif"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/blackk"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price  : NAN"
+        android:textSize="20sp"
+        android:fontFamily="serif"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/blackk"
+        android:layout_marginTop="20dp"
+
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btnCallDriver"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:text="CAll Driver"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+
+            />
+        <Button
+            android:id="@+id/btnMessageDriver"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:text="Message Driver"
+
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="start|center"
+            android:text="Driver Rating     :"
+            android:textColor="@color/blackk"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+        <RatingBar
+            android:id="@+id/ratingDriver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:numStars="5"
+            android:isIndicator="false"
+            android:layout_marginStart="10dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="start|center"
+            android:text="Service Rating   :"
+            android:textColor="@color/blackk"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            />
+        <RatingBar
+            android:id="@+id/ratingService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:numStars="5"
+            android:isIndicator="false"
+            android:layout_marginStart="10dp"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="DONE"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+
+        />
+</LinearLayout>
+
+</ScrollView>

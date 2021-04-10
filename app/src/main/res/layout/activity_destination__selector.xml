@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/driv_pass"
+    tools:context=".Activities.Passenger.Destination_Selector">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/logo"
+        android:textSize="30sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+
+    <TextView
+
+        android:id="@+id/edttxtEndingPoint"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:paddingStart="10dp"
+        android:gravity="center"
+        android:hint="@string/where_to_go"
+        android:drawableStart="@drawable/endlocation"
+
+        />
+
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+
+        android:background="@color/black" />
+
+
+    <CheckBox
+        android:id="@+id/chkbxRequestDriver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blackk"
+        android:text="\t\tRequest Driver"
+        android:textSize="20dp"
+        android:checked="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        />
+
+
+    <CheckBox
+        android:id="@+id/chkbxRequestCargo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blackk"
+        android:text="\t\tRequest Cargo"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+
+        android:background="@color/black" />
+
+     <androidx.cardview.widget.CardView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_marginStart="30sp"
+         android:layout_marginEnd="30sp"
+         android:layout_marginTop="5dp"
+         app:cardCornerRadius="8dp"
+         android:background="@color/white"
+
+         >
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:id="@+id/linear_NoOfPass"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             >
+
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="No Of Passenger : "
+             android:layout_marginStart="30dp"
+             android:textSize="20sp"
+             android:textStyle="bold"
+             android:layout_marginTop="20sp"
+             android:textColor="@color/black"
+    /><Spinner
+             android:id="@+id/edttxtNoofPass"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:drawableStart="@drawable/user"
+             android:layout_marginTop="10dp"
+             android:layout_marginEnd="30dp"
+             android:backgroundTint="@color/black"
+             android:inputType="number"
+             android:layout_marginStart="30dp"
+             />
+         </LinearLayout>
+
+
+     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnGo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:text="@string/go"
+        android:enabled="true"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        />
+
+    <Button
+        android:id="@+id/btnlogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:text="@string/logout"
+        android:enabled="true"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        />
+
+    </LinearLayout>
+
+</ScrollView>

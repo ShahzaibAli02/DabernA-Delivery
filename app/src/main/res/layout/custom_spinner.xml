@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/background_color"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtView_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Your Title"
+        android:textColor="@color/blackk"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</LinearLayout>

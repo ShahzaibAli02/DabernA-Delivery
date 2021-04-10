@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    tools:context=".Activities.Passenger.RequestingDriver">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/logo"
+        android:textSize="30sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="@color/blackk"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Driver Details"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:textColor="#FFC107"
+        android:layout_marginTop="20dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/txtDriverName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Driver Name  : NAN"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/blackk"
+        android:layout_marginTop="20dp"
+
+        />
+    <TextView
+        android:id="@+id/txtCarModule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Car Module  : NAN"
+        android:textSize="18dp"
+        android:fontFamily="serif"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/blackk"
+        android:layout_marginTop="20dp"
+
+        />
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Approximation Price  : NAN"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/blackk"
+        android:layout_marginTop="20dp"
+
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btnAccept"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:text="@string/accept"
+            android:alpha="0.5"
+            android:enabled="false"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+
+            />
+        <Button
+            android:id="@+id/btnDismiss"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:text="@string/dismiss"
+
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

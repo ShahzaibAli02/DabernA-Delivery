@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">DabernA</string>
+    <string name="login">Login</string>
+    <string name="tenter_password">\tEnter Password</string>
+    <string name="tenter_email">\tEnter Email</string>
+    <string name="driver_registration">Driver Registration</string>
+    <string name="sign_up">Sign up</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="enter_name">\tEnter Name</string>
+    <string name="policy">I have read and agree the policy of DabernA</string>
+    <string name="user_registration">Passenger Registration</string>
+    <string name="plate_no">\tPlate No</string>
+    <string name="car_type_amp_model"><![CDATA[\tCar Type & Model]]></string>
+    <string name="account_success">Account Created Successfully</string>
+    <string name="account_fail">Failed To Create Account</string>
+    <string name="title_fail">Failed</string>
+    <string name="title_success">Account Created</string>
+    <string name="Db_Accounts">Accounts</string>
+    <string name="Creating_Account">Creating Your Account..</string>
+    <string name="email_password_error">Email Or Password is Incorrect</string>
+    <string name="authentication_fail">Authentication Fail</string>
+    <string name="ending_point">Ending Point</string>
+    <string name="starting_point">Starting Point</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="action_geolocate">Pick Place</string>
+    <string name="default_info_title">Default Location</string>
+    <string name="default_info_snippet">No places found, because location permission is disabled.</string>
+    <string name="go">Go</string>
+    <string name="logout">LogOut</string>
+    <string name="DB_Requests">Requests</string>
+    <string name="accept">Accept</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="my_location">My Location</string>
+    <string name="search_passenger">Search Passenger</string>
+    <string name="where_to_go">Where To Go</string>
+</resources>

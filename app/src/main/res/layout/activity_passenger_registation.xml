@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    tools:context=".Activities.Login.PassengerRegistation">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="@string/user_registration"
+        android:textColor="@color/blackk"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/edttxtName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:paddingStart="10dp"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:hint="@string/enter_name"
+        android:drawableStart="@drawable/user"
+
+        />
+
+    <EditText
+        android:id="@+id/edttxtphone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:paddingStart="10dp"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:inputType="phone"
+        android:hint="@string/enter_phone_number"
+        android:drawableStart="@drawable/phone"
+
+        />
+    <EditText
+        android:id="@+id/edttxtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:paddingStart="10dp"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:hint="@string/tenter_email"
+        android:drawableStart="@drawable/email"
+
+        />
+    <EditText
+        android:id="@+id/edttxtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edittext"
+        android:paddingStart="10dp"
+        android:hint="@string/tenter_password"
+        android:drawableStart="@drawable/lock"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:layout_marginStart="30dp"
+        />
+
+
+    <CheckBox
+        android:id="@+id/chkbxPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/policy"
+        android:textColor="@color/blackk"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:text="@string/sign_up"
+        android:enabled="false"
+        android:alpha="0.5"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        />
+
+
+</LinearLayout>
